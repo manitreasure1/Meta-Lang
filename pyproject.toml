@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools >= 77.0.3", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name='metalang' 
+version='0.1.0'
+description = "MetaLang CLI for creating custom programming languages"
+readme = 'README.md'
+license = "MIT"
+license-files = ["LICEN[CS]E.*"]
+authors = [ { name = "Treasure Mani", email = "manitreasure1@gmail.com" } ]
+dependencies = [
+    "typer[all]",
+    "pyyaml"
+]
+requires-python = ">=3.13"
+
+[project.urls]
+Repository = "https://github.com/manitreasure1/metalang"
+
+[project.scripts]
+metalang = "metalang.cli:app"
