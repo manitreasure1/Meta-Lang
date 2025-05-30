@@ -17,7 +17,7 @@ dependencies = [
 requires-python = ">=3.13"
 
 [project.urls]
-Repository = "https://github.com/manitreasure1/metalang"
+Repository = "https://github.com/manitreasure1/Meta-Lang.git"
 
 [project.scripts]
 metalang = "metalang.cli:app"

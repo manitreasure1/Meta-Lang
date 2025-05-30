@@ -1,16 +1,16 @@
 import typer
 import yaml
 import os
-
 from rich.console import Console
+
 
 console = Console()
 app = typer.Typer()
 
+
 @app.command()
 def create():
     """Initialize a new language"""
-
     console.print("[bold blue] MetaLang: Create your own language![/bold blue]")
     while True:
         name:str = typer.prompt("What is the name of your language?", default='', show_default=False)
